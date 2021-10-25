@@ -22,11 +22,11 @@ export const Header = () => {
             
           </Nav>
           <Nav>
-            <NavLink className="me-3 text-dark text-decoration-none"  to="#deets">Home</NavLink>
-            <NavLink className="me-3 text-dark text-decoration-none"  to="#pricing">About us</NavLink>
+            <NavLink className="me-3 text-dark text-decoration-none"  to="/">Home</NavLink>
+            <NavLink className="me-3 text-dark text-decoration-none"  to="#about us">About us</NavLink>
             <NavLink className="me-3 text-dark text-decoration-none"  to="membership">Membership</NavLink>
             <NavLink className="me-3 text-dark text-decoration-none"  to="contact">Contact us</NavLink>
-            <NavLink  className="me-3 text-dark text-decoration-none" to="#login">Login </NavLink>
+            <NavLink  className="me-3 text-dark text-decoration-none" to="login">Login </NavLink>
             
           </Nav>
         </Navbar.Collapse>

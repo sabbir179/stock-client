@@ -1,6 +1,8 @@
 import React from 'react'
 import { Header } from '../components/Header/Header'
-// import banner from './../image/banner.jpg';
+import banner from './../image/banner.jpg';
+import Image from 'react-bootstrap/Image'
+import { Footer } from '../components/Footer/Footer';
 
 
 
@@ -8,8 +10,8 @@ const Home = () => {
     return (
         <div>
             <Header />
-               this is home
-            
+               <Image src= {banner} fluid />
+            <Footer />
         </div>  
     )
 }
