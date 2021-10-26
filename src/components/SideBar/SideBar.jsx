@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 
+
 const SideBar = () => {
     return (
         <div className="h-100 pt-5" style={ { backgroundColor: '#1C75BACC' } }>

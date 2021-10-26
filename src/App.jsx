@@ -11,7 +11,18 @@ import SingleBlog from './pages/SingleBlog';
 import PageError from './pages/PageError';
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
-
+import TradersAfterSignup from './pages/Traders/TradersAfterSignup';
+import MyStock from './pages/Traders/MyStock';
+import Referral from './pages/Traders/Referral';
+import SubscriptionStatus from './pages/Traders/SubscriptionStatus';
+import AdminDashboard from './pages/Admin/AdminDashboard';
+import AdminPending from './pages/Admin/AdminPending';
+import AdminReferral from './pages/Admin/AdminReferral';
+import AdminBlog from './pages/Admin/AdminBlog';
+import ActiveTraders from './pages/Admin/ActiveTraders';
+import DeactiveTraders from './pages/Admin/DeactiveTraders';
+import DeleteTraders from './pages/Admin/DeleteTraders';
+import AddStock from './pages/Admin/AddStock';
 
 function App() {
   return (
@@ -27,6 +38,18 @@ function App() {
           <Route exact path="/homeafterlogin" component={ HomeAfterLogin } />
           <Route exact path="/blog" component={ HomeAfterLogin } />
           <Route exact path="/blog/:blogId" component={ SingleBlog } />
+          <Route exact path="/tradersaftersignup" component={ TradersAfterSignup } />
+          <Route exact path="/mystock" component={ MyStock } />
+          <Route exact path="/referral" component={ Referral } />
+          <Route exact path="/subscriptionstatus" component={ SubscriptionStatus } />
+          <Route exact path="/admindashboard" component={ AdminDashboard } />
+          <Route exact path="/adminpending" component={ AdminPending } />
+          <Route exact path="/adminreferral" component={ AdminReferral } />
+          <Route exact path="/adminblog" component={ AdminBlog } />
+          <Route exact path="/activetraders" component={ ActiveTraders } />
+          <Route exact path="/deactivetraders" component={ DeactiveTraders } />
+          <Route exact path="/deletetraders" component={ DeleteTraders } />
+          <Route exact path="/addstock" component={ AddStock } />
           <Route  component= {PageError} />
          
         </Switch>
