@@ -38,7 +38,7 @@ const AdminPending = () => {
                                     <td>01711000000</td>
                                     <td>Jan 08, 2020</td>
                                     <td>
-                                        <select id="status" className="bg-secondary text-white">
+                                        <select id="status" className="bg-secondary shadow rounded text-white">
                                             <option value="pending">Pending</option>
                                             <option value="active">Active</option>
                                             <option value="deactivate">Deactivate</option>
@@ -46,7 +46,7 @@ const AdminPending = () => {
                                         </select>
                                     </td>
                                     <td>
-                                        <select id="subscription-type" className="bg-secondary text-white">
+                                        <select id="subscription-type" className="bg-secondary shadow rounded  text-white">
                                             <option value="free">Free</option>
                                             <option value="gold">Gold</option>
                                             <option value="platinum">Platinum</option>
@@ -54,7 +54,7 @@ const AdminPending = () => {
                                         </select>
                                     </td>
                                     <td>
-                                        <select id="join-mode" className="bg-secondary text-white">
+                                        <select id="join-mode" className="bg-secondary shadow rounded  text-white">
                                             <option value="referral">Referral</option>
                                             <option value="nonReferral">Non-referral</option>
                                         </select>
@@ -68,7 +68,7 @@ const AdminPending = () => {
                                     <td>01711000000</td>
                                     <td>Jan 08, 2020</td>
                                     <td>
-                                        <select id="status" className="bg-secondary text-white">
+                                        <select id="status" className="bg-secondary shadow rounded  text-white">
                                             <option value="pending">Pending</option>
                                             <option value="active">Active</option>
                                             <option value="deactivate">Deactivate</option>
@@ -76,7 +76,7 @@ const AdminPending = () => {
                                         </select>
                                     </td>
                                     <td>
-                                        <select id="subscription-type" className="bg-secondary text-white">
+                                        <select id="subscription-type" className="bg-secondary shadow rounded  text-white">
                                             <option value="free">Free</option>
                                             <option value="gold">Gold</option>
                                             <option value="platinum">Platinum</option>
@@ -84,7 +84,7 @@ const AdminPending = () => {
                                         </select>
                                     </td>
                                     <td>
-                                        <select id="join-mode" className="bg-secondary text-white">
+                                        <select id="join-mode" className="bg-secondary shadow rounded  text-white">
                                             <option value="referral">Referral</option>
                                             <option value="nonReferral">Non-referral</option>
                                         </select>
@@ -98,7 +98,7 @@ const AdminPending = () => {
                                     <td>01711000000</td>
                                     <td>Jan 08, 2020</td>
                                     <td>
-                                        <select id="status" className="bg-secondary text-white">
+                                        <select id="status" className="bg-secondary shadow rounded  text-white">
                                             <option value="pending">Pending</option>
                                             <option value="active">Active</option>
                                             <option value="deactivate">Deactivate</option>
@@ -106,7 +106,7 @@ const AdminPending = () => {
                                         </select>
                                     </td>
                                     <td>
-                                        <select id="subscription-type" className="bg-secondary text-white">
+                                        <select id="subscription-type" className="bg-secondary shadow rounded  text-white">
                                             <option value="free">Free</option>
                                             <option value="gold">Gold</option>
                                             <option value="platinum">Platinum</option>
@@ -114,7 +114,7 @@ const AdminPending = () => {
                                         </select>
                                     </td>
                                     <td>
-                                        <select id="join-mode" className="bg-secondary text-white">
+                                        <select id="join-mode" className="bg-secondary shadow rounded  text-white">
                                             <option value="referral">Referral</option>
                                             <option value="nonReferral">Non-referral</option>
                                         </select>
@@ -128,7 +128,7 @@ const AdminPending = () => {
                                     <td>01711000000</td>
                                     <td>Jan 08, 2020</td>
                                     <td>
-                                        <select id="status" className="bg-secondary text-white">
+                                        <select id="status" className="bg-secondary shadow rounded  text-white">
                                             <option value="pending">Pending</option>
                                             <option value="active">Active</option>
                                             <option value="deactivate">Deactivate</option>
@@ -136,7 +136,7 @@ const AdminPending = () => {
                                         </select>
                                     </td>
                                     <td>
-                                        <select id="subscription-type" className="bg-secondary text-white">
+                                        <select id="subscription-type" className="bg-secondary shadow rounded  text-white">
                                             <option value="free">Free</option>
                                             <option value="gold">Gold</option>
                                             <option value="platinum">Platinum</option>
@@ -144,7 +144,7 @@ const AdminPending = () => {
                                         </select>
                                     </td>
                                     <td>
-                                        <select id="join-mode" className="bg-secondary text-white">
+                                        <select id="join-mode" className="bg-secondary shadow rounded  text-white">
                                             <option value="referral">Referral</option>
                                             <option value="nonReferral">Non-referral</option>
                                         </select>
@@ -158,7 +158,7 @@ const AdminPending = () => {
                                     <td>01711000000</td>
                                     <td>Jan 08, 2020</td>
                                     <td>
-                                        <select id="status" className="bg-secondary text-white">
+                                        <select id="status" className="bg-secondary shadow rounded  text-white">
                                             <option value="pending">Pending</option>
                                             <option value="active">Active</option>
                                             <option value="deactivate">Deactivate</option>
@@ -166,7 +166,7 @@ const AdminPending = () => {
                                         </select>
                                     </td>
                                     <td>
-                                        <select id="subscription-type" className="bg-secondary text-white">
+                                        <select id="subscription-type" className="bg-secondary shadow rounded  text-white">
                                             <option value="free">Free</option>
                                             <option value="gold">Gold</option>
                                             <option value="platinum">Platinum</option>
@@ -174,7 +174,7 @@ const AdminPending = () => {
                                         </select>
                                     </td>
                                     <td>
-                                        <select id="join-mode" className="bg-secondary text-white">
+                                        <select id="join-mode" className="bg-secondary shadow rounded  text-white">
                                             <option value="referral">Referral</option>
                                             <option value="nonReferral">Non-referral</option>
                                         </select>
@@ -188,7 +188,7 @@ const AdminPending = () => {
                                     <td>01711000000</td>
                                     <td>Jan 08, 2020</td>
                                     <td>
-                                        <select id="status" className="bg-secondary text-white">
+                                        <select id="status" className="bg-secondary shadow rounded  text-white">
                                             <option value="pending">Pending</option>
                                             <option value="active">Active</option>
                                             <option value="deactivate">Deactivate</option>
@@ -196,7 +196,7 @@ const AdminPending = () => {
                                         </select>
                                     </td>
                                     <td>
-                                        <select id="subscription-type" className="bg-secondary text-white">
+                                        <select id="subscription-type" className="bg-secondary shadow rounded  text-white">
                                             <option value="free">Free</option>
                                             <option value="gold">Gold</option>
                                             <option value="platinum">Platinum</option>
@@ -204,7 +204,7 @@ const AdminPending = () => {
                                         </select>
                                     </td>
                                     <td>
-                                        <select id="join-mode" className="bg-secondary text-white">
+                                        <select id="join-mode" className="bg-secondary shadow rounded text-white">
                                             <option value="referral">Referral</option>
                                             <option value="nonReferral">Non-referral</option>
                                         </select>

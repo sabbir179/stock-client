@@ -7,7 +7,7 @@ const PostCard = () => {
         <div className= "container ">
             
             <Row className="g-4 text-center " >
-                <Col xs={12} md={4} className="#box shadow p-3 mb-5 bg-body rounded " >
+                <Col xs={12} md={4} className="#box shadow mb-5 bg-body rounded " >
                     <div className= " text-white p-2 rounded-3" style={{backgroundColor: "#1C75BA", borderRadius: "15px"}} >
                         <h1> Who we are</h1>
                     </div>
@@ -18,9 +18,9 @@ const PostCard = () => {
                         </p>
                     </div>
                 </Col>
-                <Col xs={12} md={4} className="shadow p-3 mb-5 bg-body rounded ms-2 " >
-                <div className= " text-white p-2 rounded-3" style={{backgroundColor: "#1C75BA", borderRadius: "15px"}} >
-                        <h1> What do we are do</h1>
+                <Col xs={12} md={4} className="shadow  mb-5 bg-body rounded ms-2 " >
+                <div  >
+                        <h1 className= " text-white p-2 rounded-3" style={{backgroundColor: "#1C75BA", borderRadius: "15px"}}> What do we are do</h1>
                     </div>
                     <div>
                         <p className="text-start p-2"> 
@@ -28,9 +28,9 @@ const PostCard = () => {
                         </p>
                     </div>
                 </Col>
-                <Col xs={12} md={4} className="shadow p-3 mb-5 bg-body rounded" >
-                <div className= " text-white p-2 rounded-3" style={{backgroundColor: "#1C75BA", borderRadius: "15px"}} >
-                        <h1> Get benefited</h1>
+                <Col xs={12} md={4} className="shadow  mb-5 bg-body rounded" >
+                <div  >
+                        <h1 className= " text-white p-2 rounded-3" style={{backgroundColor: "#1C75BA", borderRadius: "15px"}}> Get benefited</h1>
                     </div>
                     <div>
                         <p className="text-start p-2"> 

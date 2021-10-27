@@ -45,22 +45,22 @@ const HomeAfterLogin = () => {
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>ORPH</td>
-                                            <td>21.00</td>
-                                            <td>+15.78</td>
-                                            <td>+306.97%</td>
+                                            <td><a href="https://finance.yahoo.com/quote/AAPL?p=AAPL&.tsrc=fin-srch" target="_blank" rel="noreferrer"> APPL</a></td>
+                                            <td>149.52</td>
+                                            <td>+0.25</td>
+                                            <td>+0.16%</td>
                                         </tr>
                                         <tr>
-                                            <td>ORPH</td>
-                                            <td>21.00</td>
-                                            <td>+15.78</td>
-                                            <td>+306.97%</td>
+                                            <td><a href="https://finance.yahoo.com/quote/%5EGSPC?p=%5EGSPC" target="_blank" rel="noreferrer"> S&P 500</a></td>
+                                            <td>4,581.23</td>
+                                            <td>+6.47</td>
+                                            <td>+0.14%</td>
                                         </tr>
                                         <tr>
-                                            <td>ORPH</td>
-                                            <td>21.00</td>
-                                            <td>+15.78</td>
-                                            <td>+306.97%</td>
+                                            <td><a href="https://finance.yahoo.com/quote/ORPH?p=ORPH&.tsrc=fin-srch" target="_blank" rel="noreferrer">ORPH </a></td>
+                                            <td>3.9050</td>
+                                            <td>-0.0205</td>
+                                            <td>-0.715%</td>
                                         </tr>
                                         <tr>
                                             <td>ORPH</td>

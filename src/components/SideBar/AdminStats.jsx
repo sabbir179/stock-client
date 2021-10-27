@@ -7,7 +7,7 @@ const AdminStats = () => {
             <Row>
                 <Col xs={ 12 } sm={ 12 } md={ 4 } lg={ 4 }>
                     <div className="bg-light text-center me-4">
-                        <Card>
+                        <Card className="shadow mb-5 bg-body rounded ">
                             <Card.Header as="h5" className="bg-primary text-white">Total Registered Traders</Card.Header>
                             <Card.Body>
                                 <Card.Title as="h1">239</Card.Title>
@@ -17,7 +17,7 @@ const AdminStats = () => {
                 </Col>
                 <Col xs={ 12 } sm={ 12 } md={ 4 } lg={ 4 }>
                     <div className="bg-light text-center me-4">
-                        <Card>
+                        <Card className="shadow mb-5 bg-body rounded " >
                             <Card.Header as="h5" className="bg-success text-white">Total Active Traders</Card.Header>
                             <Card.Body>
                                 <Card.Title as="h1">140</Card.Title>
@@ -27,7 +27,7 @@ const AdminStats = () => {
                 </Col>
                 <Col xs={ 12 } sm={ 12 } md={ 4 } lg={ 4 }>
                     <div className="bg-light text-center me-4 mb-5">
-                        <Card>
+                        <Card className="shadow mb-5 bg-body rounded " >
                             <Card.Header as="h5" className="bg-dark text-white">Total Deactive Traders</Card.Header>
                             <Card.Body>
                                 <Card.Title as="h1" className="text-secondary">99</Card.Title>
