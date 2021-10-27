@@ -17,7 +17,7 @@ const SideBar = () => {
                     <hr className="text-white" />
                     <Link to="/myStock" className="text-dark text-decoration-none" ><li className="text-white fw-bold" >My Stocks</li></Link>
                     <hr className="text-white" />
-                    <Link to="/referFriend" className="text-dark text-decoration-none"><li>Refer A Friend</li></Link>
+                    <Link to="/referral" className="text-dark text-decoration-none"><li>Refer A Friend</li></Link>
                     <hr className="text-white" />
                     <Link to="/subscriptionStatus" className="text-dark text-decoration-none"><li>Subscription Status</li></Link>
                     <hr className="text-white" />
