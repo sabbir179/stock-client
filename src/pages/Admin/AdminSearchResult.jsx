@@ -1,20 +1,22 @@
 import React from 'react';
 import { Button, Col, Row, Table } from 'react-bootstrap';
 import AdminSidebar from '../../components/SideBar/AdminSidebar';
+import AdminStats from '../../components/SideBar/AdminStats';
 
-const DeleteTraders = () => {
+const AdminSearchResult = () => {
     const handleDownload = () => {
         //Put your code here
     }
+
     return (
-        <div className="p-0 m-0 overflow-hidden border-top border-dark mb-5">
+        <div className="p-0 overflow-hidden border-top border-dark mb-5" style={ { backgroundColor: "#E5E5E5" } }>
             <Row>
                 <Col xs={ 12 } sm={ 12 } md={ 2 } lg={ 2 }>
-                    <AdminSidebar></AdminSidebar>
+                    <AdminSidebar />
                 </Col>
                 <Col xs={ 12 } sm={ 12 } md={ 10 } lg={ 10 }>
-                    <div className="container mt-5 mx-auto">
-                        <h2>Admin Delete Traders Page</h2>
+                    <div className="my-5 container">
+                        <AdminStats></AdminStats>
                     </div>
                     <div className="container mt-5">
                         <Button onClick={ handleDownload } variant="warning" type="submit" className="px-5 py-3 fw-bold mt-5">Download</Button>
@@ -42,7 +44,7 @@ const DeleteTraders = () => {
                                     <td>sami@gmail.com</td>
                                     <td>01711000000</td>
                                     <td>Jan 08, 2020</td>
-                                    <td>Deactive</td>
+                                    <td>Active</td>
                                     <td>Free</td>
                                     <td>Referral</td>
                                 </tr>
@@ -53,7 +55,7 @@ const DeleteTraders = () => {
                                     <td>sabbir17@gmail.com</td>
                                     <td>01711000000</td>
                                     <td>Jan 08, 2020</td>
-                                    <td>Delete</td>
+                                    <td>Active</td>
                                     <td>Free</td>
                                     <td>Referral</td>
                                 </tr>
@@ -64,7 +66,7 @@ const DeleteTraders = () => {
                                     <td>sabbir17@gmail.com</td>
                                     <td>01711000000</td>
                                     <td>Jan 08, 2020</td>
-                                    <td>Delete</td>
+                                    <td>Active</td>
                                     <td>Free</td>
                                     <td>Referral</td>
                                 </tr>
@@ -75,7 +77,7 @@ const DeleteTraders = () => {
                                     <td>sabbir17@gmail.com</td>
                                     <td>01711000000</td>
                                     <td>Jan 08, 2020</td>
-                                    <td>Delete</td>
+                                    <td>Active</td>
                                     <td>Free</td>
                                     <td>Referral</td>
                                 </tr>
@@ -86,7 +88,7 @@ const DeleteTraders = () => {
                                     <td>sabbir17@gmail.com</td>
                                     <td>01711000000</td>
                                     <td>Jan 08, 2020</td>
-                                    <td>Delete</td>
+                                    <td>Active</td>
                                     <td>Free</td>
                                     <td>Referral</td>
                                 </tr>
@@ -95,8 +97,8 @@ const DeleteTraders = () => {
                     </div>
                 </Col>
             </Row>
-        </div>
+        </div >
     );
 };
 
-export default DeleteTraders;
+export default AdminSearchResult;

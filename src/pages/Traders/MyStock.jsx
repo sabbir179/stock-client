@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Col, Row } from 'react-bootstrap';
+import { Button, Col, Row, Table } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import SideBar from '../../components/SideBar/SideBar';
 
@@ -16,7 +16,7 @@ const MyStock = () => {
                         <hr />
                     </div>
                     <div className="container mt-5">
-                        <table className="table table-responsive">
+                        <Table responsive>
                             <thead style={ { backgroundColor: '#1C75BACC', color: 'white' } }>
                                 <tr>
                                     <th scope="col">Sl</th>
@@ -120,8 +120,7 @@ const MyStock = () => {
                                     <td><Link to="#"><Button className="btn btn-warning">Delete</Button></Link></td>
                                 </tr>
                             </tbody>
-
-                        </table>
+                        </Table>
                     </div>
                 </Col>
             </Row>

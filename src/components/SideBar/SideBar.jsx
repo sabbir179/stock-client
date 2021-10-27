@@ -13,9 +13,9 @@ const SideBar = () => {
             </div>
             <div className=" mt-5 container">
                 <ul className="list-unstyled">
-                    <Link to="/blog" className="text-dark text-decoration-none"><li>Blog</li></Link>
+                    <Link to="/blog" className="text-dark text-decoration-none" ><li>Blog</li></Link>
                     <hr className="text-white" />
-                    <Link to="/myStock" className="text-dark text-decoration-none"><li>My Stocks</li></Link>
+                    <Link to="/myStock" className="text-dark text-decoration-none" ><li className="text-white fw-bold" >My Stocks</li></Link>
                     <hr className="text-white" />
                     <Link to="/referFriend" className="text-dark text-decoration-none"><li>Refer A Friend</li></Link>
                     <hr className="text-white" />
