@@ -26,19 +26,19 @@ const Contact = () => {
             <Col className="xs={12} md={2} container mt-2 p-5">
             <Form onSubmit={ addEmail }>
                 <Row className="d-flex ">
-                    <Col className="xs={12} md={4} ">
-                            <Form.Group className="mb-3 w-75 shadow rounded  "  controlId="blogForm.ControlInput1">
+                    <Col className="xs={12} md={4} justify-content-between  ">
+                            <Form.Group className="mb-3 shadow  "  controlId="blogForm.ControlInput1">
                                 <Form.Control type="text" placeholder="First name" className="p-3" />
                             </Form.Group>
                             </Col>
                             <Col className="xs={12} md={4} ">
-                            <Form.Group className="mb-3 w-75 shadow rounded "  controlId="blogForm.ControlInput1">
+                            <Form.Group className="mb-3  shadow rounded "  controlId="blogForm.ControlInput1">
                                 <Form.Control type="text" placeholder="Middle name" className="p-3" />
                             </Form.Group>
                             </Col>
 
                             <Col className="xs={12} md={4} ">
-                            <Form.Group className="mb-3 w-75 shadow rounded " controlId="blogForm.ControlInput1">
+                            <Form.Group className="mb-3 shadow rounded " controlId="blogForm.ControlInput1">
                                 <Form.Control type="text" placeholder="Last name" className="p-3" />
                             </Form.Group>
                             </Col>

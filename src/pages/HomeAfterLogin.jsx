@@ -63,9 +63,9 @@ const HomeAfterLogin = () => {
                                             <td>-0.715%</td>
                                         </tr>
                                         <tr>
-                                            <td>ORPH</td>
-                                            <td>21.00</td>
-                                            <td>+15.78</td>
+                                            <td>Nasdaq</td>
+                                            <td>15,358.05</td>
+                                            <td>+15</td>
                                             <td>+306.97%</td>
                                         </tr>
                                     </tbody>

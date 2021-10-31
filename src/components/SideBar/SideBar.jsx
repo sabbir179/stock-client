@@ -4,6 +4,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 
 
+
 const SideBar = () => {
     return (
         <div className="h-100 pt-5" style={ { backgroundColor: '#1C75BACC' } }>
@@ -13,15 +14,15 @@ const SideBar = () => {
             </div>
             <div className=" mt-5 container">
                 <ul className="list-unstyled">
-                    <Link to="/blog" className="text-dark text-decoration-none" ><li>Blog</li></Link>
+                    <Link to="/blog" className="text-dark text-decoration-none" ><li className=" custom-style">Blog</li></Link>
                     <hr className="text-white" />
-                    <Link to="/myStock" className="text-dark text-decoration-none" ><li className="text-white fw-bold" >My Stocks</li></Link>
+                    <Link to="/myStock" className="text-dark custom-style text-decoration-none" ><li className=" custom-style" >My Stocks</li></Link>
                     <hr className="text-white" />
-                    <Link to="/referral" className="text-dark text-decoration-none"><li>Refer A Friend</li></Link>
+                    <Link to="/referral" className="text-dark text-decoration-none custom-style"><li className=" custom-style">Refer A Friend</li></Link>
                     <hr className="text-white" />
-                    <Link to="/subscriptionStatus" className="text-dark text-decoration-none"><li>Subscription Status</li></Link>
+                    <Link to="/subscriptionStatus" className="text-dark text-decoration-none custom-style"><li className=" custom-style">Subscription Status</li></Link>
                     <hr className="text-white" />
-                    <Link to="/logout" className="text-dark text-decoration-none"><li>Logout</li></Link>
+                    <Link to="/logout" className="text-dark text-decoration-none custom-style"><li className=" custom-style">Logout</li></Link>
                     <hr className="text-white" />
                 </ul>
             </div>

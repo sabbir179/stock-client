@@ -6,9 +6,9 @@ const PostCard = () => {
     return (
         <div className= "container ">
             
-            <Row className="g-4 text-center " >
-                <Col xs={12} md={4} className="#box shadow mb-5 bg-body rounded " >
-                    <div className= " text-white p-2 rounded-3" style={{backgroundColor: "#1C75BA", borderRadius: "15px"}} >
+            <Row className="d-flex justify-content-between  "  >
+                <Col xs={12} md={4} className="  shadow mb-5 bg-body rounded "  >
+                    <div className= " text-white p-2 rounded-3" style={{backgroundColor: "#1C75BA", borderRadius: "15px", }} >
                         <h1> Who we are</h1>
                     </div>
                     <div>
@@ -18,7 +18,7 @@ const PostCard = () => {
                         </p>
                     </div>
                 </Col>
-                <Col xs={12} md={4} className="shadow  mb-5 bg-body rounded ms-2 " >
+                <Col xs={12} md={4} className="shadow  mb-5 bg-body rounded  " >
                 <div  >
                         <h1 className= " text-white p-2 rounded-3" style={{backgroundColor: "#1C75BA", borderRadius: "15px"}}> What do we are do</h1>
                     </div>

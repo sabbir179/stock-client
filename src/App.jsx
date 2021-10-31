@@ -24,6 +24,7 @@ import AddStock from './pages/Admin/AddStock';
 import AdminSearchResult from './pages/Admin/AdminSearchResult';
 import AddBlogVerification from './pages/Admin/AddBlogVerification';
 import AddBlogDetail from './pages/Admin/AddBlogDetail';
+import SignUp from './pages/SignUp';
 
 function App() {
   return (
@@ -54,6 +55,7 @@ function App() {
               <Route exact path="/adminsearchresult" component={ AdminSearchResult } />
               <Route exact path="/addblogverification" component={ AddBlogVerification } />
               <Route exact path="/addblogdetail/:blogId" component={ AddBlogDetail } />
+              <Route exact path="/signup" component={ SignUp } />
               <Route exact path="*" component={ PageError } />
          
         </Switch>

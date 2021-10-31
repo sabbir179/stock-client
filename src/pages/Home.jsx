@@ -23,8 +23,8 @@ const Home = () => {
             <Button  className="btn btn-dark text-center mt-5 mb-5" > Subcription </Button>
                 <hr style={{width: "50rem", border: '1px solid #F7B538', margin:'auto', marginTop:"30px", marginBottom:"50px"}} />
             <div className="align-middle ">
-                <Row>
-                    <Col xs={12} md={6} className="align-middle" >   
+                <Row className="justify-content-between ">
+                    <Col xs={12} md={6} className="align-middle  " >   
                         <Qoute  />
                     </Col>
                     <Col xs={12} md={6} >
