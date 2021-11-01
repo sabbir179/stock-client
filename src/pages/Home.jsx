@@ -12,10 +12,11 @@ import Stock from '../components/Home/Stock';
 
 
 
+
 const Home = () => {
     return (
         <div >
-            <Stock />
+             <Stock />
             <div className= "text-center">
             <Image src= {banner} fluid />
             <PostCard />
