@@ -33,6 +33,16 @@
     
 }
 
+/* .line{
+  border-left:1px solid gray;
+  height:50px;
+  position:absolute; 
+  left:10%;  
+  margin-left:-4px;
+  top:10px;
+
+} */
+
 @-webkit-keyframes move {
     0% {
         margin-left: 1400px;

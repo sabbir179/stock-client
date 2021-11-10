@@ -13,7 +13,7 @@ const Membership = () => {
                 <h2 className="text-white text-center " >The right price for you, whowever you are</h2>
             </div>
             <div className="text-center container mt-5">
-                <Row className="mb-5">
+                <Row className="mb-5" style={{marginTop:"-300px"}}>
                     <Col>
                         <PriceTag />
                     </Col>
