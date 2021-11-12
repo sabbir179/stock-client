@@ -5,6 +5,7 @@ import Blogs from '../components/Blogs/Blogs';
 import SideBar from '../components/SideBar/SideBar';
 
 const HomeAfterLogin = () => {
+    
     return (
         <div className="p-0 m-0 overflow-hidden border-top border-dark">
             <Row>

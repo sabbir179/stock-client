@@ -3,7 +3,7 @@ import { Button, Col, Row } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 import AdminSidebar from '../../components/SideBar/AdminSidebar';
 import AdminStats from '../../components/SideBar/AdminStats';
-import useBlogs from '../../Hooks/useBlogs';
+import useBlogs from '../../hooks/useBlogs';
 
 const AddBlogVerification = () => {
     const [ blogs ] = useBlogs( {} );

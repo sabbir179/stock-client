@@ -25,19 +25,29 @@ import AdminSearchResult from './pages/Admin/AdminSearchResult';
 import AddBlogVerification from './pages/Admin/AddBlogVerification';
 import AddBlogDetail from './pages/Admin/AddBlogDetail';
 import SignUp from './pages/SignUp';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { fetchAuthUser } from './redux/slices/auth.slice';
+import { PublicRoute } from './hoc/PublicRoute';
+import { PrivateRoute } from './hoc/PrivateRoute';
 
 function App() {
+
+  const dispatch = useDispatch()
+	useEffect(() => {
+		dispatch(fetchAuthUser())
+  }, [dispatch])
+
   return (
     <Router>
         <Header />
         <Switch>
-          
               <Route exact path="/" component={ Home } />
               <Route exact path="/home" component={ Home } />
               <Route exact path="/membership" component={ Membership } />
               <Route exact path="/contact" component={ Contact } />
-              <Route exact path="/login" component={ Login } />
-              <Route exact path="/homeafterlogin" component={ HomeAfterLogin } />
+              <PublicRoute exact path="/login" component={ Login } />
+              <PrivateRoute roles={['TRADER']} exact path="/homeafterlogin" component={ HomeAfterLogin } />
               <Route exact path="/blog" component={ HomeAfterLogin } />
               <Route exact path="/blog/:blogId" component={ SingleBlog } />
               <Route exact path="/tradersaftersignup" component={ TradersAfterSignup } />
@@ -57,7 +67,6 @@ function App() {
               <Route exact path="/addblogdetail/:blogId" component={ AddBlogDetail } />
               <Route exact path="/signup" component={ SignUp } />
               <Route exact path="*" component={ PageError } />
-         
         </Switch>
         <Footer />
     </Router>

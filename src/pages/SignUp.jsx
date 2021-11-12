@@ -1,5 +1,4 @@
 import React , { useState } from 'react';
-import FromInput from '../components/SignUp/FromInput';
 import { Form,  Row, Col, Button, input, label} from 'react-bootstrap';
 
 

@@ -1,11 +1,12 @@
 import React from 'react';
 import {Navbar, Nav,Container} from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import { useAuth } from '../../hooks/useAuth';
 import logo from './../../image/logo.png'
 import './Header.css'
 
 export const Header = () => {
-
+    const {authUser} = useAuth()
   
     return (
         <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
@@ -28,7 +29,9 @@ export const Header = () => {
             <NavLink className="me-3 text-dark nav-link text-decoration-none"  to="#about us">About us</NavLink>
             <NavLink className="me-3 text-dark nav-link text-decoration-none"  to="membership">Membership</NavLink>
             <NavLink className="me-3 text-dark nav-link text-decoration-none"  to="contact">Contact us</NavLink>
-            <NavLink  className="me-3 text-dark nav-link text-decoration-none" to="login">Login </NavLink>
+            {
+                !authUser && <NavLink  className="me-3 text-dark nav-link text-decoration-none" to="login">Login </NavLink>
+            }
             
           </Nav>
         </Navbar.Collapse>

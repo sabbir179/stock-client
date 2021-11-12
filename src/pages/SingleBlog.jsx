@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Col, Form, Row } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import SideBar from '../components/SideBar/SideBar';
-import useBlogs from '../Hooks/useBlogs';
+import useBlogs from '../hooks/useBlogs';
 
 const SingleBlog = () => {
     const { blogId } = useParams();

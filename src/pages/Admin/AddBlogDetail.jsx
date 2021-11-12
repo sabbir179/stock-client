@@ -3,7 +3,7 @@ import { Button, Col, Row } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import AdminSidebar from '../../components/SideBar/AdminSidebar';
 import AdminStats from '../../components/SideBar/AdminStats';
-import useBlogs from '../../Hooks/useBlogs';
+import useBlogs from '../../hooks/useBlogs';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
 
