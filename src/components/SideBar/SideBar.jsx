@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
+import { Routes } from '../../constants';
 
 
 
@@ -17,13 +18,13 @@ const SideBar = () => {
             </div>
             <div className=" mt-5 container">
                 <ul className="list-unstyled">
-                    <Link to="/blog" className="text-dark text-decoration-none" ><li className=" custom-style">Blog</li></Link>
+                    <Link to={Routes.TRADER_BLOGS} className="text-dark text-decoration-none" ><li className=" custom-style">Blog</li></Link>
                     <hr className="text-white" />
-                    <Link to="/myStock" className="text-dark custom-style text-decoration-none" ><li className=" custom-style" >My Stocks</li></Link>
+                    <Link to={Routes.TRADER_MY_STOCKS} className="text-dark custom-style text-decoration-none" ><li className=" custom-style" >My Stocks</li></Link>
                     <hr className="text-white" />
-                    <Link to="/referral" className="text-dark text-decoration-none custom-style"><li className=" custom-style">Refer A Friend</li></Link>
+                    <Link to={Routes.TRADER_REFERRAL} className="text-dark text-decoration-none custom-style"><li className=" custom-style">Refer A Friend</li></Link>
                     <hr className="text-white" />
-                    <Link to="/subscriptionStatus" className="text-dark text-decoration-none custom-style"><li className=" custom-style">Subscription Status</li></Link>
+                    <Link to={Routes.TRADER_SUBSCRIPTION_STATUS} className="text-dark text-decoration-none custom-style"><li className=" custom-style">Subscription Status</li></Link>
                     <hr className="text-white" />
                     <div onClick={logout} className=" custom-style">Logout</div>
                     <hr className="text-white" />
