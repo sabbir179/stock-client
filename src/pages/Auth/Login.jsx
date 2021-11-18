@@ -1,13 +1,15 @@
 import React, { useState } from "react";
-import { Button, Form, Row, Col } from "react-bootstrap";
+import { Button, Form, Row, Col, Spinner } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { API } from "../api";
-import { fetchAuthUser } from "../redux/slices/auth.slice";
+import { API } from "../../api";
+import { Routes } from "../../constants";
+import { fetchAuthUser } from "../../redux/slices/auth.slice";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const dispatch = useDispatch();
 
   const onEmailInput = ({ target: { value } }) => setEmail(value);
@@ -15,10 +17,13 @@ const Login = () => {
   const onFormSubmit = (e) => {
     e.preventDefault();
     if (email && password) {
-      API.login({ email, password }).then((res) => {
-        localStorage.setItem("authToken", res.data.token);
-        dispatch(fetchAuthUser());
-      });
+      setIsLoading(true);
+      API.login({ email, password })
+        .then((res) => {
+          localStorage.setItem("authToken", res.data.token);
+          dispatch(fetchAuthUser());
+        })
+        .finally(() => setIsLoading(false));
     }
   };
 
@@ -39,7 +44,7 @@ const Login = () => {
         <h1> Sign in to your account</h1>
         <p className="fw-light">
           or if you don't have an account click on
-          <Link to="/signup">
+          <Link to={Routes.SIGN_UP1}>
             <span className="fw-bold"> Sign up </span>
           </Link>
         </p>
@@ -71,6 +76,15 @@ const Login = () => {
             type="submit"
             className="px-5 py-3 shadow rounded fw-bold"
           >
+            {isLoading ? (
+              <Spinner
+                as="span"
+                animation="border"
+                size="sm"
+                role="status"
+                aria-hidden="true"
+              />
+            ) : null}
             Login
           </Button>
         </Form>

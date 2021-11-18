@@ -1,10 +1,10 @@
 import React from 'react';
 import { Col, Row, Table } from 'react-bootstrap';
-import Blogs from '../components/Blogs/Blogs';
+import Blogs from '../../components/Blogs/Blogs';
 
-import SideBar from '../components/SideBar/SideBar';
+import SideBar from '../../components/SideBar/SideBar';
 
-const HomeAfterLogin = () => {
+const TraderBlogs = () => {
     
     return (
         <div className="p-0 m-0 overflow-hidden border-top border-dark">
@@ -80,4 +80,4 @@ const HomeAfterLogin = () => {
     );
 };
 
-export default HomeAfterLogin;
+export default TraderBlogs;

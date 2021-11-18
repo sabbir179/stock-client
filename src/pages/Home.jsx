@@ -1,8 +1,7 @@
 import React from "react";
 
 import banner from "./../image/banner.jpg";
-
-import { Image, Row, Col } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import PostCard from "../components/Home/PostCard";
 import Qoute from "../components/Home/Qoute";
 import Button from "@restart/ui/esm/Button";
