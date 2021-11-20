@@ -5,7 +5,7 @@ import { faMobile, faMailBulk, faCopyright } from '@fortawesome/free-solid-svg-i
 
 export const Footer = () => {
     return (
-       <Row  className="text-center ">  
+       <Row  className="text-center mx-0">  
             <Col xs={12} md={4} >
                 <span className="me-3"><FontAwesomeIcon icon={faMobile} /></span><span>+1-408 600 2293</span> 
             </Col>
