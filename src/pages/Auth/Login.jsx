@@ -44,7 +44,7 @@ const Login = () => {
         <h1> Sign in to your account</h1>
         <p className="fw-light">
           or if you don't have an account click on
-          <Link to={Routes.SIGN_UP1}>
+          <Link to={Routes.SIGN_UP}>
             <span className="fw-bold"> Sign up </span>
           </Link>
         </p>

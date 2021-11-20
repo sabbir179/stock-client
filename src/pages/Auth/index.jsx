@@ -4,9 +4,7 @@ import { Routes, UserRole } from "../../constants";
 import { useAuth } from "../../hooks/useAuth";
 import Login from "./Login";
 // import SignUp from "./SignUp";
-import SignUp1 from "./SignUp1";
-import SignUp2 from "./SignUP2";
-import SignUp3 from "./SignUp3";
+import SignUp from './MultiStepSignUp';
 
 const AuthPage = () => {
   const { authUser, isFetchingAuthUser } = useAuth();
@@ -24,10 +22,7 @@ const AuthPage = () => {
   return !authUser ? (
     <Switch>
       <Route exact path={Routes.LOGIN} component={Login} />
-      {/* <Route exact path={Routes.SIGN_UP} component={SignUp} /> */}
-      <Route exact path={Routes.SIGN_UP1} component={SignUp1} />
-      <Route exact path={Routes.SIGN_UP2} component={SignUp2} />
-      <Route exact path={Routes.SIGN_UP3} component={SignUp3} />
+      <Route exact path={Routes.SIGN_UP} component={SignUp} />
       <Redirect from="/auth" to={Routes.LOGIN} />
     </Switch>
   ) : null;

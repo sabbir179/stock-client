@@ -1,11 +1,19 @@
 import Button from "@restart/ui/esm/Button";
 import React from "react";
 import { Col, Form, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import { Routes } from "../../constants";
 import "./SignUp.css";
 
-const SignUp2 = () => {
+const SignUp2 = (props) => {
+
+  const back = (e) => {
+    e.preventDefault();
+    props.prevStep();
+  }
+
+  const saveAndContinue = (e) => {
+    e.preventDefault();
+    props.nextStep();
+  };
   return (
     <Row className="mx-0 text-white sign-up-right">
       <Col md={3} className=" sign-up-left"></Col>
@@ -20,6 +28,8 @@ const SignUp2 = () => {
         <Form className="m-5">
           <Form.Group className="mb-3 mt-4" controlId="formGridAddress2">
             <Form.Control
+              onChange={props.handleChange}
+              name="tradingAccount"
               type="text"
               placeholder="Which trading account you are using"
               className="py-3"
@@ -28,8 +38,10 @@ const SignUp2 = () => {
 
           <Form.Group className="mb-3 mt-4" controlId="formGridAddress2">
             <Form.Control
+              onChange={props.handleChange}
+              name="referralCode"
               type="text"
-              placeholder="Add refereal code (is fill automatically)
+              placeholder="Add referral code (is fill automatically)
 "
               className="py-3"
             />
@@ -37,17 +49,25 @@ const SignUp2 = () => {
 
           <Row className="mb-3 my-5">
             <Form.Group as={Col} controlId="formGridEmail"></Form.Group>
-            <Form.Group as={Col} controlId="formGridEmail"></Form.Group>
             <Form.Group as={Col} controlId="formGridEmail">
-              <Link to={Routes.SIGN_UP3}>
-                <Button
-                  variant="primary"
-                  type="submit"
-                  className="form-control bg-warning rounded-pill py-2"
-                >
-                  Next
-                </Button>
-              </Link>
+              <Button
+                onClick={back}
+                variant="primary"
+                type="submit"
+                className="form-control bg-warning rounded-pill py-2"
+              >
+                Previous
+              </Button>
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridEmail">
+              <Button
+                onClick={saveAndContinue}
+                variant="primary"
+                type="submit"
+                className="form-control bg-warning rounded-pill py-2"
+              >
+                Next
+              </Button>
             </Form.Group>
           </Row>
         </Form>
