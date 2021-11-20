@@ -1,5 +1,5 @@
-import React , { useState } from 'react';
-import { Form,  Row, Col, Button, Spinner } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Form, Row, Col, Button, Spinner } from 'react-bootstrap';
 import { useHistory } from 'react-router';
 import { API } from '../../api';
 import { Routes } from '../../constants';
@@ -8,11 +8,11 @@ import "./SignUp.css";
 const SignUp = () => {
 
     const [values, setValues] = useState({
-        firstName: "John",
-        lastName: "Doe",
-        email: "john@doe.com",
-        phone: "+8801536987457",
-        password: "test1234",
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        password: "",
     })
 
     const [step, setStep] = useState(1)
@@ -21,7 +21,7 @@ const SignUp = () => {
 
 
     const isValidForm = () => {
-        const {firstName, lastName, email, phone, password } = values
+        const { firstName, lastName, email, phone, password } = values
         return firstName && lastName && email && phone && password
     }
     const onSubmit = async () => {
@@ -42,21 +42,21 @@ const SignUp = () => {
     }
 
     const onChange = (e) => {
-       setValues({...values, [e.target.name]: e.target.value})
+        setValues({ ...values, [e.target.name]: e.target.value })
     }
 
     const onNextClick = () => {
         if (step < 3) {
-            setStep((prevStep)=> prevStep + 1)
+            setStep((prevStep) => prevStep + 1)
         }
     }
 
     const onPreviousClick = () => {
         if (step > 1) {
-            setStep((prevStep)=> prevStep - 1)
+            setStep((prevStep) => prevStep - 1)
         }
     }
-    
+
     const renderStepper = () => {
         switch (step) {
             case 1:
@@ -99,24 +99,24 @@ const SignUp = () => {
             <Form className="m-5">
                 <Row className="mb-3 mt-5">
                     <Form.Group as={Col}>
-                        <Form.Control value={values.firstName} onChange={onChange} name="firstName" required type="text" placeholder="First name" />
+                        <Form.Control onChange={onChange} name="firstName" required type="text" placeholder="First name" />
                     </Form.Group>
 
                     <Form.Group as={Col}>
-                        <Form.Control value={values.lastName} onChange={onChange} name="lastName" required type="text" placeholder="Last name" />
+                        <Form.Control onChange={onChange} name="lastName" required type="text" placeholder="Last name" />
                     </Form.Group>
                 </Row>
 
                 <Form.Group className="mb-3 mt-5">
-                    <Form.Control value={values.phone} onChange={onChange} name="phoneNumber" required type="text" placeholder="Phone Number" />
+                    <Form.Control onChange={onChange} name="phone" required type="text" placeholder="Phone Number" />
                 </Form.Group>
 
                 <Form.Group className="mb-3 mt-4">
-                    <Form.Control value={values.email} onChange={onChange} name="email" required type="email" placeholder="Email Address" />
+                    <Form.Control onChange={onChange} name="email" required type="email" placeholder="Email Address" />
                 </Form.Group>
 
                 <Form.Group className="mb-3 mt-4">
-                    <Form.Control value={values.password} onChange={onChange} name="password" required type="password" placeholder="Password" />
+                    <Form.Control onChange={onChange} name="password" required type="password" placeholder="Password" />
                 </Form.Group>
 
                 <Row className="my-4">
@@ -140,7 +140,7 @@ const SignUp = () => {
                     className='mb-3 mt-4'
                 >
                     <Form.Control
-                        onChange={()=>{}}
+                        onChange={() => { }}
                         name='tradingAccount'
                         type='text'
                         placeholder='Which trading account you are using'
@@ -206,14 +206,14 @@ const SignUp = () => {
                 <Col md={4}>
                     {
                         step > 1 ?
-                        <Button
-                            onClick={onPreviousClick}
-                            variant='primary'
-                            type='submit'
-                            className='form-control bg-warning rounded-pill py-2'
-                        >
-                            Previous
-                        </Button> : null
+                            <Button
+                                onClick={onPreviousClick}
+                                variant='primary'
+                                type='submit'
+                                className='form-control bg-warning rounded-pill py-2'
+                            >
+                                Previous
+                            </Button> : null
                     }
                 </Col>
                 <Col md={{ span: 4, offset: 4 }}>

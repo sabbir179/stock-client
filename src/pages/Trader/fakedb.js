@@ -1,0 +1,30 @@
+const myStock = [
+    {
+        sl: 1,
+        stock: 'Stock1',
+        stockName: 'APPL',
+        entryPrice: 140.45,
+        ExitPrice: 150
+    },
+    {
+        sl: 2,
+        stock: 'Stock2',
+        stockName: 'APPL',
+        entryPrice: 140.45,
+        ExitPrice: 150
+    },
+    {
+        sl: 3,
+        stock: 'Stock3',
+        stockName: 'APPL',
+        entryPrice: 140.45,
+        ExitPrice: 150
+    },
+    {
+        sl: 4,
+        stock: 'Stock4',
+        stockName: 'APPL',
+        entryPrice: 140.45,
+        ExitPrice: 150
+    }
+]
