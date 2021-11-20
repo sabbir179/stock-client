@@ -27,7 +27,7 @@ const SignUp3 = (props) => {
     setIsLoading(true);
     API.signUp(userInfo)
       .then((res) => {
-        dispatch(fetchAuthUser());
+
       })
       .finally(() => setIsLoading(false));
 

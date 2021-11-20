@@ -11,8 +11,6 @@ class MultiStepSignUp extends Component {
         phoneNumber: '',
         email: '',
         password: '',
-        tradingAccount: '',
-        referralCode: '',
     }
 
     nextStep = () => {
@@ -35,8 +33,8 @@ class MultiStepSignUp extends Component {
     }
 
     render() {
-        const { step, firstName, lastName, phoneNumber, email, password, tradingAccount, referralCode } = this.state;
-        const inputValues = { firstName, lastName, phoneNumber, email, password, tradingAccount, referralCode };
+        const { step, firstName, lastName, phoneNumber, email, password } = this.state;
+        const inputValues = { firstName, lastName, phoneNumber, email, password };
         // eslint-disable-next-line default-case
         switch (step) {
             case 1:
