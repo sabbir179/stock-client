@@ -13,6 +13,27 @@ api.interceptors.request.use(function (config) {
 	return config
 })
 
+api.interceptors.response.use(
+	(response) => response,
+	(error) => {
+		const errorResponse = error.response
+		if (errorResponse && errorResponse.data) {
+			if (errorResponse.data.message) {
+				if (Array.isArray(errorResponse.data.message)) {
+					const message = errorResponse.data.message.join('\r\n')
+					return Promise.reject(new Error(message))
+				} else {
+					return Promise.reject(new Error(errorResponse.data.message))
+				}
+			} else {
+				return Promise.reject(error)
+			}
+		} else {
+			return Promise.reject(error)
+		}
+	}
+)
+
 const PATHS = {
 	signup: '/auth/register',
 	login: '/auth/login',

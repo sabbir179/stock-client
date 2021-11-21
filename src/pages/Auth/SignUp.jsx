@@ -1,5 +1,5 @@
 import React , { useState } from 'react';
-import { Form,  Row, Col, Button, Spinner } from 'react-bootstrap';
+import { Form,  Row, Col, Button, Spinner, Toast, ToastContainer } from 'react-bootstrap';
 import { useHistory } from 'react-router';
 import { API } from '../../api';
 import { Routes } from '../../constants';
@@ -18,6 +18,7 @@ const SignUp = () => {
     const [step, setStep] = useState(1)
     const [isSubmitting, setIsSubmitting] = useState(false)
     const history = useHistory()
+    const [error, setError] = useState(null)
 
 
     const isValidForm = () => {
@@ -28,15 +29,12 @@ const SignUp = () => {
         try {
             if (isValidForm()) {
                 setIsSubmitting(true)
-                console.log(values)
                 await API.signUp(values)
                 setIsSubmitting(false)
                 history.push(Routes.SIGN_UP_SUCCESS)
             }
         } catch (error) {
-            // TODO: handle error here...
-            console.error(error)
-            alert(error.message)
+            setError(error)
             setIsSubmitting(false)
         }
     }
@@ -108,7 +106,7 @@ const SignUp = () => {
                 </Row>
 
                 <Form.Group className="mb-3 mt-5">
-                    <Form.Control value={values.phone} onChange={onChange} name="phoneNumber" required type="text" placeholder="Phone Number" />
+                    <Form.Control value={values.phone} onChange={onChange} name="phone" required type="text" placeholder="Phone Number" />
                 </Form.Group>
 
                 <Form.Group className="mb-3 mt-4">
@@ -262,6 +260,26 @@ const SignUp = () => {
                 {renderStepContent()}
                 {renderStepActions()}
             </Col>
+            {
+                error ?
+                    <ToastContainer className="p-3" position={'top-end'}>
+                        <Toast
+                            className="d-inline-block m-1"
+                            bg={'danger'}
+                            onClose={() => setError(null)}
+                            show={!!error} delay={3000}
+                            autohide
+                        >
+                            <Toast.Header>
+                                <strong className="me-auto">Error</strong>
+                            </Toast.Header>
+                            <Toast.Body className={'Danger'}>
+                                {error.message}
+                            </Toast.Body>
+                        </Toast>      
+                    </ToastContainer>
+                    : null
+            }
         </Row>
     );
 };
