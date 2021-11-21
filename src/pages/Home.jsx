@@ -3,7 +3,7 @@ import React from "react";
 import banner from "./../image/banner.jpg";
 import { Image } from "react-bootstrap";
 import PostCard from "../components/Home/PostCard";
-import Qoute from "../components/Home/Qoute";
+import Qoute from "../components/Home/Quote";
 import Button from "@restart/ui/esm/Button";
 import Review from "../components/Home/Review";
 import Stock from "../components/Home/Stock";

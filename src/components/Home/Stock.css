@@ -1,54 +1,49 @@
-.test2{
-    overflow-x:scroll;
-    
-    width: 100vw;
-    
-}
-.test2::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
-  }
-
-.test{    
-    background-color: lightcyan;
-    
-    width: 4278px;
-    -webkit-animation-name: move;
-  -webkit-animation-duration: 40s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-direction: left;
-  -webkit-animation-timing-function: linear;
-    
+.stocks-container {
+	background-color: lightcyan;
+	position: relative;
+	overflow: hidden;
 }
 
-.test:hover {
-    -webkit-animation-play-state: paused;
-  }
-.test div{
-    
-    margin: 3px;
-    padding: 2px;
-    width: 200px;
-    display: inline-block;
-    
-    
+.stocks {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+
+	animation-name: move;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	animation-direction: left;
+	animation-timing-function: linear;
+	-webkit-animation-name: move;
+	-webkit-animation-duration: 30s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: left;
+	-webkit-animation-timing-function: linear;
 }
 
-/* .line{
-  border-left:1px solid gray;
-  height:50px;
-  position:absolute; 
-  left:10%;  
-  margin-left:-4px;
-  top:10px;
+.stocks:hover {
+	-webkit-animation-play-state: paused;
+	animation-play-state: paused;
+}
 
-} */
+.stocks div:not(:first-child) {
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-color: rgb(228, 228, 228);
+}
 
-@-webkit-keyframes move {
-    0% {
-        margin-left: 1400px;
-      }
-    100% {
-      margin-left: -4278px;
-    }
-    
-  }
+.stocks div {
+	margin: 3px;
+	min-width: 180px;
+	padding: 2px 15px;
+	display: inline-block;
+}
+
+@keyframes move {
+	0% {
+		margin-left: 100%;
+	}
+	100% {
+		margin-left: -100%;
+	}
+}
