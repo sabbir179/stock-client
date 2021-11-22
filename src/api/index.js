@@ -38,7 +38,10 @@ const PATHS = {
 	signup: '/auth/register',
 	login: '/auth/login',
 	me: '/auth/me',
+	marketSummary: '/finance/marketSummary'
 }
+
+
 
 const signUp = (userData) => {
 	return api.post(PATHS.signup, userData)
@@ -52,8 +55,13 @@ const fetchAuthUser = () => {
 	return api.get(PATHS.me)
 }
 
+const marketSummary = () => {
+	return api.get(PATHS.marketSummary)
+}
+
 export const API = {
 	signUp,
 	login,
 	fetchAuthUser,
+	marketSummary,
 }
