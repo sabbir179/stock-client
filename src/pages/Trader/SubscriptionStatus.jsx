@@ -1,15 +1,23 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import SideBar from '../../components/SideBar/SideBar';
+import { useAuth } from '../../hooks/useAuth';
 
 const SubscriptionStatus = () => {
+    const { authUser } = useAuth();
+    const { firstName, lastName, subscription, phone, email, status } = authUser;
+
+    const createdDate = new Date(subscription.createdAt).toDateString();
+    const expiryDate = new Date(subscription.expiryDate).toDateString();
+    console.log(authUser)
+
     return (
         <div className="p-0 m-0 overflow-hidden border-top border-dark mb-5">
             <Row>
-                <Col xs={ 12 } sm={ 12 } md={ 2 } lg={ 2 }>
+                <Col xs={12} sm={12} md={2} lg={2}>
                     <SideBar />
                 </Col>
-                <Col xs={ 12 } sm={ 12 } md={ 10 } lg={ 10 }>
+                <Col xs={12} sm={12} md={10} lg={10}>
                     <div className="container mt-5 mx-auto">
                         <h1>Subscription Status</h1>
                         <hr />
@@ -20,7 +28,7 @@ const SubscriptionStatus = () => {
                             <tbody>
                                 <tr>
                                     <th className="fw-lighter">Full Name</th>
-                                    <td>Sabbir Ahmed</td>
+                                    <td>{firstName} {lastName}</td>
 
                                 </tr>
                                 <tr>
@@ -29,27 +37,27 @@ const SubscriptionStatus = () => {
                                 </tr>
                                 <tr>
                                     <th className="fw-lighter">Crate Date</th>
-                                    <td>January 02, 2021</td>
+                                    <td>{createdDate}</td>
                                 </tr>
                                 <tr>
                                     <th className="fw-lighter">Expiry Date</th>
-                                    <td>February 02, 2022</td>
+                                    <td>{expiryDate}</td>
                                 </tr>
                                 <tr>
                                     <th className="fw-lighter">Phone No.</th>
-                                    <td>+198273889290</td>
+                                    <td>{phone}</td>
                                 </tr>
                                 <tr>
                                     <th className="fw-lighter">Email</th>
-                                    <td>sa@gmail.com</td>
+                                    <td>{email}</td>
                                 </tr>
                                 <tr>
                                     <th className="fw-lighter">Status</th>
-                                    <td>With referral</td>
+                                    <td>{status}</td>
                                 </tr>
                                 <tr>
                                     <th className="fw-lighter">Payment Status</th>
-                                    <td>Free</td>
+                                    <td>{subscription.type}</td>
                                 </tr>
                             </tbody>
                         </table>
